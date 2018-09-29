@@ -1,0 +1,13 @@
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\bin\Debug\Bank.exe.config
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\bin\Debug\Bank.exe
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\bin\Debug\Bank.pdb
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.csprojResolveAssemblyReference.cache
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.BankManjah.resources
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.Properties.Resources.resources
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.csproj.GenerateResource.Cache
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.exe
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.pdb
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.AddBalance.resources
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\bin\Debug\MaterialSkin.dll
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.WithdrawUSD.resources
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.WithdrawIDR.resources
