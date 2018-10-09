@@ -15,12 +15,14 @@ using static Bank.Tabungan;
 using static Bank.AddBalance;
 using static Bank.WithdrawIDR;
 using static Bank.WithdrawUSD;
+using static Bank.UserBook;
 
 namespace Bank
 {
     public partial class BankManjah : MaterialForm
     {
         static Tabungan user = new Tabungan();
+        static Book history = new Book();
         String message;
         public BankManjah()
         {
@@ -47,7 +49,7 @@ namespace Bank
         private void addBBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddBalance add = new AddBalance(ref user);
+            AddBalance add = new AddBalance(ref user, ref history);
             add.Show();
         }
 
@@ -71,14 +73,21 @@ namespace Bank
         private void withdrawIDRBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WithdrawIDR add = new WithdrawIDR(ref user);
+            WithdrawIDR add = new WithdrawIDR(ref user, ref history);
             add.Show();
         }
 
         private void witdrawUSDBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WithdrawUSD add = new WithdrawUSD(ref user);
+            WithdrawUSD add = new WithdrawUSD(ref user, ref history);
+            add.Show();
+        }
+
+        private void historyBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserBook add = new UserBook(ref history);
             add.Show();
         }
     }

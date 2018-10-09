@@ -11,3 +11,4 @@ C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Ban
 C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\bin\Debug\MaterialSkin.dll
 C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.WithdrawUSD.resources
 C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.WithdrawIDR.resources
+C:\Users\tafaquh\Documents\Visual Studio 2015\Projects\Prak Pengolahan Citra\Bank\Bank\obj\Debug\Bank.UserBook.resources

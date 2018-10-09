@@ -13,16 +13,19 @@ using MaterialSkin.Controls;
 
 using static Bank.Tabungan;
 using static Bank.BankManjah;
+using static Bank.Book;
 
 namespace Bank
 {
     public partial class AddBalance : MaterialForm
     {
         Tabungan user;
-        public AddBalance(ref Tabungan user)
+        Book history;
+        public AddBalance(ref Tabungan user, ref Book history)
         {
             InitializeComponent();
             this.user = user;
+            this.history = history;
 
             // Create a material theme manager and add the form to manage (this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
@@ -51,8 +54,11 @@ namespace Bank
                 bool status = user.addBalance(amount);
                 if (status)
                 {
+                    DateTime time = DateTime.Today;
+                    string success = "Successfully added " + amount + " to your balance!";
+                    history.addHistory(time.ToString(), success);
                     this.Hide();
-                    BankManjah add = new BankManjah("Successfully added Rp "+amount+" to your account!");
+                    BankManjah add = new BankManjah(success);
                     add.Show();
                 }
                 else

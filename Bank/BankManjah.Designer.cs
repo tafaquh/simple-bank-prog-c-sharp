@@ -37,6 +37,7 @@
             this.witdrawUSDBtn = new MaterialSkin.Controls.MaterialRaisedButton();
             this.withdrawIDRBtn = new MaterialSkin.Controls.MaterialRaisedButton();
             this.labelMessage = new System.Windows.Forms.Label();
+            this.historyBtn = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbTafaquh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,11 +133,25 @@
             this.labelMessage.Size = new System.Drawing.Size(0, 13);
             this.labelMessage.TabIndex = 16;
             // 
+            // historyBtn
+            // 
+            this.historyBtn.Depth = 0;
+            this.historyBtn.Location = new System.Drawing.Point(492, 76);
+            this.historyBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.historyBtn.Name = "historyBtn";
+            this.historyBtn.Primary = true;
+            this.historyBtn.Size = new System.Drawing.Size(96, 21);
+            this.historyBtn.TabIndex = 17;
+            this.historyBtn.Text = "History";
+            this.historyBtn.UseVisualStyleBackColor = true;
+            this.historyBtn.Click += new System.EventHandler(this.historyBtn_Click);
+            // 
             // BankManjah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.historyBtn);
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.withdrawIDRBtn);
             this.Controls.Add(this.witdrawUSDBtn);
@@ -166,6 +181,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton withdrawIDRBtn;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelMessage;
+        private MaterialSkin.Controls.MaterialRaisedButton historyBtn;
     }
 }
 

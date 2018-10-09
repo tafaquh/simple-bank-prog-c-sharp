@@ -13,16 +13,19 @@ using MaterialSkin.Controls;
 
 using static Bank.BankManjah;
 using static Bank.Tabungan;
+using static Bank.Book;
 
 namespace Bank
 {
     public partial class WithdrawIDR : MaterialForm
     {
         Tabungan user;
-        public WithdrawIDR(ref Tabungan user)
+        Book history;
+        public WithdrawIDR(ref Tabungan user, ref Book history)
         {
             InitializeComponent();
             this.user = user;
+            this.history = history;
 
             // Create a material theme manager and add the form to manage (this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
@@ -66,8 +69,11 @@ namespace Bank
                 bool status = user.getCashWithdrawalIDR(amount);
                 if (status)
                 {
+                    DateTime time = DateTime.Today;
+                    string success = "Successfully withdrawal IDR " + amount + "!";
+                    history.addHistory(time.ToString(), success);
                     this.Hide();
-                    BankManjah add = new BankManjah("Successfully withdrawal Rp " + amount + "!");
+                    BankManjah add = new BankManjah(success);
                     add.Show();
                 }
                 else
